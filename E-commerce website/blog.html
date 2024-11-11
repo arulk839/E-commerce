@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="header">
+      <h1>GROCO MARKET</h1>
+      <div>
+        <ul id="navbar">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="shop.html">Shop</a></li>
+             <li><a class="active" href="blog.html">Blog</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+        
+        </ul>
+      </div>
+    </section>
+ 
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="pro3.png" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="pro5.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="pro8.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="pro9.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="pro7.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="pro10.png" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Shirt</h6>
+            <h4>Men's Fashion Shirts</h4>
+            <h2>$149.00</h2>
+            <select>
+                <option>select size</option>
+                <option>XL</option>
+                <option >XXL</option>
+                <option>Small</option>
+                <option >Large</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add Cart</button>
+            <h4>Product Details</h4>
+            <span>This shirt dolor sit, amet consectetur adipisicing elit. Ea, veniam ex. Quisquam, minima tenetur saepe molestiae itaque quis quae deleniti.</span>
+        </div>
+    </section>
+
+     <section id="newsletter" class="section-p1" >
+      <div class="newstext">
+           <h4>Sign Up Newsletter</h4>
+           <p>Get E-mail updates about our latest sho and <span>Special Offer</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your Email Address">
+        <button class="normal">Sign Up</button>
+      </div>
+     </section>
+      
+
+     <footer class="section-p1">
+      <div class="col">
+        <h4>Contact me</h4>
+        <p><strong>Address:</strong> 543 wellington Road, Street 32,india</p>
+        <p><strong>Phone:</strong>+8484 34567 769/ (+9)9876543654</p>
+        <p><strong>Hours:</strong> 10:00 -18:00, Monday - sat</p>
+        <div class="follow">
+          <h4>Follow</h4>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Imformation</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlish</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+          <p>From App Store Or Google Play</p>
+          <div class="row">
+            <img src="app2.png" alt="">
+            <img src="app4.png" alt="">
+          </div>
+          <p>Secured Payment Gateway<p>
+      </div>
+      <div class="copyright">
+        <p>@ 2021, HTML CSS JAVASCRIPT Ecommerce Template</p>
+      </div>
+     </footer>
+
+     <script>
+        var MainImg = document.getElementById('MainImg')
+        var smallimg=document.getElementsByClassName('small-img')
+
+        smallimg[0].onclick = function(){
+            MainImg.src=smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src=smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src=smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src=smallimg[3].src;
+        }
+        smallimg[4].onclick = function(){
+            MainImg.src=smallimg[4].src;
+        }
+     </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
